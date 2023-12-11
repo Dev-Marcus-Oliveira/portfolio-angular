@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="mb-2">
+    <div>
+      <button
+        class="btn btn-outline-primary mb-2 me-2"
+        (click)="isCollapsed = !isCollapsed"
+      >
+        Filter <fa-icon [icon]="faFilter"></fa-icon>
+      </button>
+      <button
+        class="btn btn-secondary-primary mb-2"
+        (click)="ResetFilters()"
+        *ngIf="selectedTechnologies.length > 0"
+      >
+        Reset
+      </button>
+    </div>
+
+    <div [collapse]="isCollapsed" [isAnimated]="true" class="flex-column">
+      <div class="border mb-2 shadow-sm" style="width: 250px">
+        <form>
+          <div class="row mx-0">
+            <!-- Coluna 1 -->
+            <div class="col">
+              <div class="form-group" *ngFor="let technology of technologies">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    (change)="toggleFilter(technology)"
+                    [checked]="isTechnologySelected(technology)"
+                  />
+                  <label class="form-check-label small">{{ technology }}</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna 2 -->
+            <div class="col">
+              <div class="form-group" *ngFor="let technology of technologies2">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    (change)="toggleFilter(technology)"
+                    [checked]="isTechnologySelected(technology)"
+                  />
+                  <label class="form-check-label small">{{ technology }}</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div
+      *ngFor="let project of filteredProjects"
+      class="col-lg-4 col-md-6 mb-4"
+      style="max-width: 380px; min-width: 380px"
+    >
+      <app-project-card [project]="project"> </app-project-card>
+    </div>
+  </div>
+</div>

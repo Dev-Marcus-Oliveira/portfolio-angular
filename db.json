@@ -1,0 +1,106 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "name": "Número secreto",
+      "summary": "Use your voice to guess the secret number",
+      "description": "Practical activity from the Alura Course, where we use an API together with Javascript to access the microphone, capture the phrase and compare it with the random number generated from 1 to 1000.",
+      "githubLink": "https://github.com/Dev-Marcus-Oliveira/numero-secreto",
+      "vercelLink": "https://numero-secreto-xi.vercel.app/",
+      "pictures": [
+        "../../assets/images/project-images/numero-secreto-img-1.png",
+        "../../assets/images/project-images/numero-secreto-img-2.png",
+        "../../assets/images/project-images/numero-secreto-img-3.png"
+      ],
+      "tags": ["JAVASCRIPT", "HTML", "CSS"]
+    },
+    {
+      "id": 1,
+      "name": "Alura midi",
+      "summary": "Create your own beat",
+      "description": "In this project we use onClick actions to create sound effects.",
+      "githubLink": "https://github.com/Dev-Marcus-Oliveira/aluramidi",
+      "vercelLink": "https://aluramidi-umber.vercel.app/",
+      "pictures": [
+        "../../assets/images/project-images/alura-midi-img-1.png",
+        "../../assets/images/project-images/alura-midi-img-2.png"
+      ],
+      "tags": ["JAVASCRIPT", "HTML", "CSS"]
+    },
+    {
+      "id": 2,
+      "name": "Newsletter",
+      "summary": "Introduction to Tailwind",
+      "description": "In this activity, Tailwind was used to perform all inline styling in the template itself.",
+      "githubLink": "https://github.com/Dev-Marcus-Oliveira/newsletter",
+      "vercelLink": "https://newsletter-nu-six.vercel.app/",
+      "pictures": [
+        "../../assets/images/project-images/newsletter-img-1.png",
+        "../../assets/images/project-images/newsletter-img-2.png"
+      ],
+      "tags": ["HTML", "Tailwind"]
+    },
+    {
+      "id": 3,
+      "name": "Alura SPA",
+      "summary": "Editing with SCSS",
+      "description": "Template decorated using SCSS for styling.",
+      "githubLink": "https://github.com/Dev-Marcus-Oliveira/alura-spa",
+      "vercelLink": "https://alura-spa-three.vercel.app/",
+      "pictures": [
+        "../../assets/images/project-images/alura-spa-img-1.png",
+        "../../assets/images/project-images/alura-spa-img-2.png"
+      ],
+      "tags": ["HTML", "SCSS"]
+    },
+    {
+      "id": 4,
+      "name": "Alura Play",
+      "summary": "Practicing responsiveness",
+      "description": "In this activity, a static template was created from a well-known platform, where we styled it in a responsive way for desktop and mobile.",
+      "githubLink": "https://github.com/Dev-Marcus-Oliveira/alura-play",
+      "vercelLink": "https://alura-play-six-snowy.vercel.app/",
+      "pictures": ["../../assets/images/project-images/alura-play-img-1.png"],
+      "tags": ["HTML", "CSS"]
+    },
+    {
+      "id": 5,
+      "name": "Culturama",
+      "summary": "Working with grid and flexbox",
+      "description": "In this beautiful responsive template, cards and sections were created, organized with grid and flexbox.",
+      "githubLink": "https://github.com/Dev-Marcus-Oliveira/culturama",
+      "vercelLink": "https://culturama-beige.vercel.app/",
+      "pictures": [
+        "../../assets/images/project-images/culturama-img-1.png",
+        "../../assets/images/project-images/culturama-img-2.png"
+      ],
+      "tags": ["HTML", "CSS"]
+    },
+    {
+      "id": 6,
+      "name": "Lista de compras",
+      "summary": "Using objects through the shopping list",
+      "description": "Project that uses many JS functions, and the new feature is using localStorage to store shopping list data.",
+      "githubLink": "https://github.com/Dev-Marcus-Oliveira/ListaDeCompras",
+      "vercelLink": "https://lista-de-compras-dusky.vercel.app/",
+      "pictures": [
+        "../../assets/images/project-images/lista-de-compras-img-1.png",
+        "../../assets/images/project-images/lista-de-compras-img-2.png"
+      ],
+      "tags": ["HTML", "CSS", "JAVASCRIPT"]
+    },
+    {
+      "id": 7,
+      "name": "U-bank",
+      "summary": "U-bank application and introduction to forms",
+      "description": "U-bank application, introducing forms and functionalities through the account opening template.",
+      "githubLink": "https://github.com/Dev-Marcus-Oliveira/u-bank",
+      "vercelLink": "https://u-bank.vercel.app/",
+      "pictures": [
+        "../../assets/images/project-images/ubank-img-1.png",
+        "../../assets/images/project-images/ubank-img-2.png"
+      ],
+      "tags": ["HTML", "CSS", "JAVASCRIPT"]
+    }
+  ]
+}

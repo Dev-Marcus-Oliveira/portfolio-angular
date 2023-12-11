@@ -1,0 +1,306 @@
+<div class="container text-center">
+  <button
+    (click)="DonwloadFile()"
+    class="btn btn-primary mb-4 shadow border mt-4"
+  >
+    PDF Resume <fa-icon [icon]="faDownload"></fa-icon>
+  </button>
+
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isSkillsOpen">
+        <!-- setinha inicio -->
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Skills</div>
+          <div style="width: 10.05px">
+            <div *ngIf="!isSkillsOpen" style="color: white">
+              <fa-icon [icon]="faChevronRight"></fa-icon>
+            </div>
+            <div *ngIf="isSkillsOpen" style="color: white">
+              <fa-icon [icon]="faChevronDown"> </fa-icon>
+            </div>
+          </div>
+        </button>
+
+        <!-- setinha fim -->
+
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <ul>
+              <li>Cascading Style Sheets (CSS)</li>
+              <li>Web Development</li>
+              <li>Angular</li>
+              <li>Responsive Web Design</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>HTML5</li>
+              <li>Front-End Development</li>
+              <li>Figma</li>
+              <li>User Experience (UX)</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>Tailwind CSS</li>
+              <li>Git</li>
+              <li>SASS</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isWorkExperience">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Work Experience</div>
+          <div style="width: 10.05px">
+            <div *ngIf="!isWorkExperience" style="color: white">
+              <fa-icon [icon]="faChevronRight"></fa-icon>
+            </div>
+            <div *ngIf="isWorkExperience" style="color: white">
+              <fa-icon [icon]="faChevronDown"> </fa-icon>
+            </div>
+          </div>
+        </button>
+        <!-- Inicio experiência 1 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            BILINGUAL CUSTUMER SERVICE,
+            <span class="span-text">08/2021 - current</span>
+          </h2>
+          <h3 class="secondary-text">
+            ATENTO S/A,
+            <span class="span-text">São Paulo, SP</span>
+          </h3>
+          <ul>
+            <li>
+              Service provider for Facebook and Instagram customers, support
+              aimed at ads, Marketplace and Shops on Instagram and Facebook for
+              customers with high investment in the platform.
+            </li>
+          </ul>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final experiência 1 -->
+
+        <!-- Inicio experiência 2 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            SAC OPERATOR,
+            <span class="span-text">02/2020 - 10/2021 </span>
+          </h2>
+          <h3 class="secondary-text">
+            Konecta Brazil Outsourcing Ltda,
+            <span class="span-text">São Paulo, SP</span>
+          </h3>
+          <ul>
+            <li>
+              Customer service, clarification of doubts, registration of
+              services, current account and credit card service in general.
+            </li>
+          </ul>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final experiência 2 -->
+
+        <!-- Inicio experiência 3 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            PEDAGOGICAL COORDINATOR,
+            <span class="span-text">07/2018 - 08/2019</span>
+          </h2>
+          <h3 class="secondary-text">
+            Brainy Academy,
+            <span class="span-text">São Paulo, SP</span>
+          </h3>
+          <ul>
+            <li>
+              Student retention, content preparation, supervision of activities
+              routine, provide training and team meetings, pedagogical meetings,
+              reversals of possible cancellations.
+            </li>
+          </ul>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final experiência 3 -->
+
+        <!-- Inicio experiência 4 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            PROFESSIONAL EDUCATION INSTRUCTOR,
+            <span class="span-text">02/2018 - 06/2018 </span>
+          </h2>
+          <h3 class="secondary-text">
+            IINTTEC,
+            <span class="span-text">Guarulhos, SP</span>
+          </h3>
+          <ul>
+            <li>
+              Teach business management, basic English and basic computer
+              classes for classes with an average of 35 students, retaining and
+              caring for students.
+            </li>
+          </ul>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final experiência 4 -->
+
+        <!-- Inicio experiência 5 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            PEDAGOGICAL COORDINATOR,
+            <span class="span-text">02/2017 - 12/2017</span>
+          </h2>
+          <h3 class="secondary-text">
+            ENJOY - Inglês Profissionalizante
+            <span class="span-text">São Paulo, SP</span>
+          </h3>
+          <ul>
+            <li>
+              Supervise, train teachers, customer service, meetings, lectures,
+              class control, methodology control, methodology creation, care to
+              students and guardians, delegate tasks, control goals.
+            </li>
+          </ul>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final experiência 5 -->
+
+        <!-- Inicio experiência 6 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            COORDINATION ASSISTANT,
+            <span class="span-text">06/2015 - 12/2016</span>
+          </h2>
+          <h3 class="secondary-text">
+            ENJOY - Inglês Profissionalizante
+            <span class="span-text">São Paulo, SP</span>
+          </h3>
+          <ul>
+            <li>
+              Team training and leadership; customer service; speeches
+              motivational; class monitoring; control developments operational;
+              telemarketing.
+            </li>
+          </ul>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final experiência 6 -->
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isEducation">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Education</div>
+          <div style="width: 10.05px">
+            <div *ngIf="!isEducation" style="color: white">
+              <fa-icon [icon]="faChevronRight"></fa-icon>
+            </div>
+            <div *ngIf="isEducation" style="color: white">
+              <fa-icon [icon]="faChevronDown"> </fa-icon>
+            </div>
+          </div>
+        </button>
+        <!-- Inicio educação 1 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            UNIP,
+            <span class="span-text">São Paulo, 08/2023 - 06/2025 </span>
+          </h2>
+          <h3 class="secondary-text">
+            Higher Education: Systems Analysis and Development
+          </h3>
+          <ul>
+            <li>
+              Software Development · Operating Systems · Databases · Data
+              Networks · Software Systems Engineering · POO
+            </li>
+          </ul>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final educação 1 -->
+
+        <!-- Inicio educação 2 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            Alura,
+            <span class="span-text">São Paulo, 01/2023 - 01/2024 </span>
+          </h2>
+          <h3 class="secondary-text">
+            Information Technology: Front-End School
+          </h3>
+          <ul>
+            <li>
+              POO · Amazon Web Services (AWS) · Figma (Software) · User
+              Experience (UX) · Agile Methodologies · Kanban · Scrum · Bootstrap
+              · Tailwind CSS · REST APIs · Git · GitHub · Web Development · SASS
+              · JavaScript Frameworks · Angular 14+ · TypeScript · Responsive
+              Web Design · JavaScript · HTML5 · Front-End Development ·
+              Cascading Style Sheets (CSS).
+            </li>
+          </ul>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final educação 2 -->
+
+        <!-- Inicio educação 3 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            Udemy,
+            <span class="span-text">São Paulo, 07/2023 - 01/2024 </span>
+          </h2>
+          <h3 class="secondary-text">
+            Information Technology: Angular Framework
+          </h3>
+          <ul>
+            <li>
+              HTML5 · Angular 4+ · TypeScript · Front-End Development ·
+              Bootstrap · REST APIs · E2E.
+            </li>
+          </ul>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final educação 3 -->
+
+        <!-- Inicio educação 4 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            UNIP,
+            <span class="span-text">São Paulo, 07/2018 - 02/2020 </span>
+          </h2>
+          <h3 class="secondary-text">Higher Education: Management Processes</h3>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final educação 4 -->
+
+        <!-- Inicio educação 5 -->
+        <div style="text-align: left">
+          <h2 class="primary-text mb-0">
+            ENJOY - Inglês Profissionalizante,
+            <span class="span-text"> São Paulo, 09/2014 - 09/2016 </span>
+          </h2>
+          <h3 class="secondary-text">
+            Professional Course: English and Office package
+          </h3>
+        </div>
+        <hr style="border-top: dashed 2px; margin-top: 2rem" />
+        <!-- Final educação 5 -->
+      </accordion-group>
+    </accordion>
+  </div>
+</div>
