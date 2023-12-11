@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class PortfolioService {
-  private apiUrl = 'http://localhost:3000/projects';
+  private apiUrl = 'https://portfolio-db-json.vercel.app/projects';
 
   constructor(private http: HttpClient) {}
 
