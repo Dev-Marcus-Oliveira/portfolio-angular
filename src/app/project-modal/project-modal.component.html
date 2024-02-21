@@ -4,7 +4,7 @@
 </div>
 
 <div class="modal-body">
-  <carousel>
+  <carousel [isAnimated]="true">
     <div *ngFor="let picture of project?.pictures">
       <slide style="max-width: 800px">
         <img

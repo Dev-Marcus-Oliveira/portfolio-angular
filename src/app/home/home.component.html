@@ -37,7 +37,7 @@
           <div *ngFor="let project of featuredProjects">
             <h4>{{ project.name }}</h4>
 
-            <carousel>
+            <carousel [isAnimated]="true">
               <div *ngFor="let picture of project.pictures">
                 <slide>
                   <img

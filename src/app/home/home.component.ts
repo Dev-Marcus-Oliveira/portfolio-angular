@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const featuredProjectIds = [0];
+    const featuredProjectIds = [11];
 
     this.portfolioService.setFeaturedProjects(featuredProjectIds).subscribe(
       (projects: Project[]) => {
